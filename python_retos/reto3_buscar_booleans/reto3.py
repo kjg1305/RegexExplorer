@@ -7,11 +7,11 @@
 
 import re
 
-texto = "La respuesta es True, pero a veces es False."
+texto = " hay gente False pero a veces hay gente True "
 
 # Expresión regular para booleanos (True o False, case-insensitive)
-patron = r"\\b(True|False)\\b"
-
+#patron = r"\\b(True|False)\\b" 
+patron = r"\b(True|False)\b"   # solo habia que dos  de las \ por que la exprecion entiende que \ es que parte de lo que estamos buscando
 # Buscar todos los booleanos
 booleans = re.findall(patron, texto, re.IGNORECASE)
 
