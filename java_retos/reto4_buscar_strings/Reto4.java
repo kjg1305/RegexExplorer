@@ -9,9 +9,9 @@ import java.util.regex.*;
 
 public class Reto4 {
     public static void main(String[] args) {
-        String texto = "El mensaje es \"Hola mundo\" y la clave es \"1234\".";
+        String texto = "El mensaje es \"Holiis\" la clave es \"1255\" y la fechas es \"25/08/2025\" ";
         // Expresión regular para strings entre comillas dobles
-        String patron = "\"(.*?)\"";
+        String patron = "\"(.*?)\""; //funciona bien
         Pattern pattern = Pattern.compile(patron);
         Matcher matcher = pattern.matcher(texto);
         System.out.print("Strings encontrados: ");
